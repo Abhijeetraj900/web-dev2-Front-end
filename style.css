@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+.container {
+
+width: 70%;
+display: flex;
+margin-inline: auto;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+.left-col {
+    width: 30%;
+}
+.right-col {
+    width: 70%;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img{
+    
+    width: 100%;
+}
+.image-box .user-name{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.contact-info ul,.Skills ul,.Language ul{
+    list-style: none;
+}
+.icon-text{
+    display: flex;
+    size: 2em;
+    gap: 8px;
+}
+i{
+    color: brown;
+}
+.progress-bar{
+    background-color: rgba(17, 7, 7, 0.351);
+    border-radius: 10px;
+}
+.progress-bar .progress{
+    color: rgb(238, 182, 182);
+    background-color: teal;
+    border-radius: 10px;
+    text-align: center;
+}
