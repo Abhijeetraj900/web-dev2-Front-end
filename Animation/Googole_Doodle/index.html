@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOGLE DOODLE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        *{
+            margin: 0;
+
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+
+        .box{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50px;
+            animation: up-down 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes up-down {
+            0%{
+                transform: translateY(0)
+            }
+            100%{
+                transform: translateY(-50px)
+
+
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" ></div>
+        <div class="box"style="animation-delay: 0.2s;"></div>
+        <div class="box" style="animation-delay: 0.3s;"></div>
+        <div class="box" style="animation-delay: 0.4s;"></div>
+    </div>
+</body>
+</html>

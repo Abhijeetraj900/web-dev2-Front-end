@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 100px 30px auto 20px;
+}
+.box{
+    border: 2px solid rgb(68, 9, 9);
+    background-color: aliceblue;
+    padding: auto;
+}

@@ -6,25 +6,53 @@
 
 body{
     background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+p{
+    font-size: 0.8rem;
+    color: rgb(68, 42, 11);
+}
+
+h2{
+    font-weight: normal;
+    color: #888;
+
+}
+h3{
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: black;
+    margin-block: 10px;
+}
 .container {
 
-width: 70%;
+width: 100%;
 display: flex;
+flex-direction: column;
+gap: 10px;
 margin-inline: auto;
+margin-block: 20px;
 }
 
 .card{
-    background-color: white;
+    background-color: rgb(248, 239, 239);
     box-shadow: 4px 4px 4px #ccc;
+    padding: 10px;
+    
+
 }
 
 .left-col {
-    width: 30%;
+    flex-basis:100%;
 }
 .right-col {
-    width: 70%;
+    flex-basis:  100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
 }
 
 .image-box {
@@ -47,6 +75,7 @@ margin-inline: auto;
     display: flex;
     size: 2em;
     gap: 8px;
+    align-items: center;
 }
 i{
     color: brown;
@@ -54,10 +83,86 @@ i{
 .progress-bar{
     background-color: rgba(17, 7, 7, 0.351);
     border-radius: 10px;
+    margin-block: 8px;
+
 }
 .progress-bar .progress{
     color: rgb(238, 182, 182);
     background-color: teal;
     border-radius: 10px;
     text-align: center;
+    font-size: 0.9rem;
+    padding-block: 2px;
+
 }
+.sub-text{
+    color: black;
+   font-size: x-small;
+    padding: auto;
+    margin: 10px
+}
+.left-des, .card-container{
+    margin-inline: 20px;
+}
+ul{
+    margin-block: 20px;
+    list-style: none;
+}
+
+ul>li{
+    margin-top: 8px;
+}
+hr{
+    border: 0.5px solid white;
+}
+.Skills{
+    margin-block: 10px;
+
+}
+.language{
+    margin-block: 10px;
+}
+.badge{
+    background-color: teal;
+    color: black;
+    padding: 2px 4px;
+    font-size: 0.6rem;
+    border-radius: 3px;
+}
+
+.education-card{
+    background-color: rgb(249, 233, 233);
+    padding: 10px;
+    box-shadow: 4px 4px 4px #ccc;
+    margin-inline: 2px;
+    margin-block: 10px;
+    font-weight: lighter;
+
+}
+.Date{
+    color: brown;
+}
+
+.icon-text p{
+    color:#888
+}
+
+@media screen and (min-width:641px){
+    .container{
+        width: 70%;
+        flex-direction: row;
+
+    }
+
+    .left-col {
+        flex-basis:35%;
+}
+
+.right-col {
+    flex-basis:65%;
+}
+
+
+
+}
+    
