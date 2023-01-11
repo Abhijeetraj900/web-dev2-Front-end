@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 360px;
+    margin: 60px auto;
+    
+
+}
+
+.number-input{
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.buttons-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+
+}
+.button{
+    background-color: #ccc;
+    border: 2px solid black ;
+}
