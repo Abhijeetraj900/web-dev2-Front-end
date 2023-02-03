@@ -5,15 +5,41 @@
 }
 
 .container{
-    max-width: 360px;
+    max-width: 280px;
     margin: 60px auto;
     
 
 }
 
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.span-2{
+   grid-column: span 2;
+}
+.span-3{
+    grid-column: span 2;
+}
+
 .number-input{
     width: 100%;
     padding: 20px 10px;
+    background-color: black;
+    font-family: monospace;
+    color: white;
+    font-size: 3rem;
+    text-align: end;
+    border: none;
+    
 }
 
 .buttons-grid{
@@ -23,5 +49,18 @@
 }
 .button{
     background-color: #ccc;
-    border: 2px solid black ;
+    border: 1px solid black ;
+    padding-block: 12px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(180, 125, 17);
+}
+
+.orange{
+    background-color: orange;
 }
